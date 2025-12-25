@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SuperbSparkle</title>
+        <link rel="stylesheet" href="superb.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Roboto:wght@301&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <img src="service-videos/logo2.png" alt="SUPERB SPARKLE">
+            <nav>
+                <ul>
+                    <li><a href="#services">our services</a></li>
+                    <li><a href="#about-us">about us</a></li>
+                    <li><a href="#contact-us">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="greeting">
+            <div class="greeting-section"> 
+                <video class="background-video" autoplay muted loop playsinline class="background-video">
+                    <source src="service-videos/live-powerwash.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+                <div class="overlay-text"><p>RESTORE YOUR HOME'S SPARKLE</p></div>
+            </div>
+            <script>
+                const video = document.querySelector('.background-video');
+                video.playbackRate = 0.75;
+            </script>
+
+        </section>
+
+        <section id="services">
+            <div><h2><b>OUR SERVICES</b></h2></div>
+            <div class="service-list">
+                <div class="service-item" data-serviice="power-washing">
+                    <img src="service-videos/powerwashing.jpg">
+                    <div class="service-text-overlay"><p>power washing</p></div>
+                </div>
+                <div class="service-item" data-service="window-cleaning">
+                    <img src="service-videos/windowservice.png">
+                    <div class="service-text-overlay"><p>window cleaning</p></div>
+                </div>
+                <div class="service-item" data-service="autumn-cleaning">
+                    <img src="service-videos/autumservice.jpeg">
+                    <div class="service-text-overlay"><p>autumn cleaning</p></div>
+                </div>
+                <div class="service-item" data-service="gutter-cleaning">
+                    <img src="service-videos/gutterservice.jpg">
+                    <div class="service-text-overlay"><p>gutter cleaning</p></div>
+                </div>
+                <div class="service-item" data-service="snow-removal">
+                    <img src="service-videos/snowplowservice.jpg">
+                    <div class="service-text-overlay"><p>snow removal</p></div>
+                </div>
+                <div class="service-item" data-service="moving">
+                    <img src="service-videos/movingservice.jpg">
+                    <div class="service-text-overlay"><p>moving</p></div>
+                </div>
+
+            </div>
+            
+        </section>
+        
+        <section id="about-us">
+            <h2><b>ABOUT US</b></h2>
+            <div class="about-text"><p>Superb Sparkle was founded in August 2024 by two lifelong friends. 
+                As recent college graduates we were eager to dive into our adults lives and make 
+                an impact in our community. Both of our families have strong backgrounds in exterior 
+                cleaning and grounds maintenance. We are determined to keep these traditions alive in 
+                the form of our company, Superb Sparkle. Nothing is more important to us than customer
+                satisfaction and a sparkling clean yard.</p>
+            </div>
+        </section>
+
+        <section id="contact-us">
+            <h2><b>CONTACT US</b></h2>
+            <div class="info-box">
+                <div class="send-info-section"> 
+                    <input placeholder="Enter name" class="input-style" type="text">
+                    <input placeholder="Enter phone number" class="input-style" type="text">
+                    <input placeholder="Enter email" class="input-style" type="text">
+                    <textarea placeholder="Your Message" class="input-style message-style"></textarea>
+                </div>
+            </div>
+            <button class="submit-button">Submit</button>
+        </section>
+
+        <section id="reviews">
+            
+                <h2 class="review-text">customer reviews</h2>
+                <div class="reviews-sec" id="reviewsSlider">
+                    <div class="review-item">
+                        <p>"Superb Sparkle did an amazing job power washing my house! 
+                            It looks brand new again. Highly recommend their services!" 
+                            - Jamie L.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <p>"The team was professional and efficient. They cleaned my gutters 
+                            and windows, and I couldn't be happier with the results!" 
+                            - Alex M.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <p>"I was impressed with the attention to detail and quality of work. 
+                            My driveway looks fantastic after their power washing service." 
+                            - Sarah K.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <p>"Superb Sparkle made my autumn cleanup stress-free. They were thorough 
+                            and left my yard looking immaculate!" 
+                            - David R.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <p>"Excellent service from start to finish. The team was friendly, 
+                            punctual, and did a great job moving my belongings." 
+                            - Emily S.</p>
+                    </div>
+                </div>
+        </section>
+        <section id="media-link">
+            <div class="media-box">
+                <div class="media-boxbox">
+                    <a target="_blank" rel="noopener noreferrer" 
+                    href="https://www.instagram.com/superbsparklellc/">
+                    <img src="service-videos/instalogo.png"></a>
+                </div>
+                    <a target="_blank" rel="noopener noreferrer" 
+                    href="https://www.facebook.com/superbsparklellc/">
+                    <img src="service-videos/facebooklogo.webp"></a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 Superb Sparkle LLC. All rights reserved.</p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
