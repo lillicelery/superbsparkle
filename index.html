@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SuperbSparkle</title>
         <link rel="stylesheet" href="superb.css">
-    
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Roboto:wght@301&display=swap" rel="stylesheet"> 
@@ -39,29 +41,29 @@
         </section>
 
         <section id="services">
-            <div><h2><b>OUR SERVICES</b></h2></div>
+            <div><h2 data-aos="fade-down"><b>OUR SERVICES</b></h2></div>
             <div id="service-list">
-                <div class="service-item" data-service="power-washing">
+                <div class="service-item" data-service="power-washing" data-aos="fade-up">
                     <img src="service-videos/powerwashing.jpg">
                     <div class="service-text-overlay"><p>power washing</p></div>
                 </div>
-                <div class="service-item" data-service="window-cleaning" style="">
+                <div class="service-item" data-service="window-cleaning" data-aos="fade-up" data-aos-delay="100">
                     <img src="service-videos/windowservice.png">
                     <div class="service-text-overlay"><p>window cleaning</p></div>
                 </div>
-                <div class="service-item" data-service="autumn-cleaning">
+                <div class="service-item" data-service="autumn-cleaning" data-aos="fade-up" data-aos-delay="200">
                     <img src="service-videos/autumservice.jpeg">
                     <div class="service-text-overlay"><p>autumn cleaning</p></div>
                 </div>
-                <div class="service-item" data-service="gutter-cleaning">
+                <div class="service-item" data-service="gutter-cleaning" data-aos="fade-up" data-aos-delay="300">
                     <img src="service-videos/gutterservice.jpg">
                     <div class="service-text-overlay"><p>gutter cleaning</p></div>
                 </div>
-                <div class="service-item" data-service="snow-removal">
+                <div class="service-item" data-service="snow-removal" data-aos="fade-up" data-aos-delay="400">
                     <img src="service-videos/snowplowservice.jpg">
                     <div class="service-text-overlay"><p>snow removal</p></div>
                 </div>
-                <div class="service-item" data-service="moving">
+                <div class="service-item" data-service="moving" data-aos="fade-up" data-aos-delay="500">
                     <img src="service-videos/movingservice.jpg">
                     <div class="service-text-overlay"><p>moving</p></div>
                 </div>
@@ -71,8 +73,8 @@
         </section>
         
         <section id="about-us">
-            <h2><b>ABOUT US</b></h2>
-            <div class="about-text"><p>Superb Sparkle was founded in August 2024 by two lifelong friends. 
+            <h2 data-aos="fade-down"><b>ABOUT US</b></h2>
+            <div class="about-text" data-aos="fade-up"><p>Superb Sparkle was founded in August 2024 by two lifelong friends. 
                 As recent college graduates we were eager to dive into our adults lives and make 
                 an impact in our community. Both of our families have strong backgrounds in exterior 
                 cleaning and grounds maintenance. We are determined to keep these traditions alive in 
@@ -83,7 +85,7 @@
 
         <section id="contact-us">
             <h2><b>CONTACT US</b></h2>
-            <div class="info-box">
+            <div class="info-box" data-aos="fade-up">
                 <div class="send-info-section"> 
                     <input placeholder="Enter name" class="input-style" type="text">
                     <input placeholder="Enter phone number" class="input-style" type="text">
@@ -91,7 +93,7 @@
                     <textarea placeholder="Your Message" class="input-style message-style"></textarea>
                 </div>
             </div>
-            <button class="submit-button">Submit</button>
+            <button class="submit-button" data-aos="fade-up" data-aos-delay="100">Submit</button>
         </section>
 
         <section id="reviews">

@@ -1,3 +1,7 @@
+AOS.init({
+    duration: 700,
+    once: true
+});
 const slider = document.getElementById('reviewsSlider');
 
 // 1. Clone the content for a seamless loop
@@ -22,25 +26,17 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-const observerOptions = {
-    threshold: [0.1, 1.0]
-};
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+const section = document.querySelector('#services');
+
+const observer = new IntersectionObserver(
+    ([entry]) => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0) scale(1)";
+            section.classList.add('in-view');
+            observer.unobserve(section);
         }
-        else{
-            entry.target.style.opacity = "0.5";
-            entry.target.style.transform = "translateY(50px) scale(0.1)";
-        }
-});
-}, observerOptions);
+    },
+    { threshold: 0.5 }
+);
 
-document.querySelectorAll('.service-item').forEach(item => {
-    item.style.opacity = "0.9";
-    item.style.transform = "translateY(50px) scale(0.1)";
-    observer.observe(item);
-});
+observer.observe(section);
